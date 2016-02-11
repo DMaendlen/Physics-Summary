@@ -1,0 +1,389 @@
+\chapter{Wellenlehre}
+	\section{Grundlagen}
+		\subsection{Ausbreitungsgeschwindigkeit der Welle $c$}
+			\begin{align*}
+			c &= \frac{\lambda}{T} = \lambda f = \frac{\Delta l}{\Delta t} 
+			& \frac{c}{c_0}&=\sqrt{\frac{T}{T_0}}
+			\end{align*}
+
+			\begin{table}[h]
+			\begin{tabular}{lll}
+			$\lambda\dots$ Wellenlänge & $\Delta l\dots$ Länge & $\Delta t\dots$ Zeit\\
+			$T_0\dots$ Vergleichstemperatur & $c_0\dots$ Vergleichsgeschwindigkeit &\\
+			\end{tabular}
+			\end{table}
+		
+		\subsection{Frequenzdifferenz}
+			\[\frac{\Delta f}{f}=\frac{\Delta \lambda}{\lambda}\]
+        
+		\subsection{Zeitverzögerung}
+			\[ \Delta t = \frac{x}{c} \]
+			
+		\subsection{Grundgleichungen}
+			\begin{align*}
+				y(x,t) & = \hat{y} \cos [\omega(t-\frac{x}{c})] &oder& & y(x,t) &= \hat{y} \cos(\omega t-kx) 
+			\end{align*}
+			wobei - Verschiebung nach rechts (pos x Richtung) \newline
+			und + Verschiebung nach links
+        
+		\subsection{Wellenzahl $k$}
+			\[ k  = \frac{\omega}{c} = \frac{2\pi f}{c} = \frac{2\pi}{\lambda} \]
+			Infos: \newline
+			Lichtwellen von $\lambda_{min} = 380 \mathrm{nm}$ (Ultra Violett) bis $\lambda_{max} = 780\mathrm{nm}$ rot \newline
+			Lichtfrequenzen von $f_{max} = 790\mathrm{THz}$ bis $f_{min} = 390 \mathrm{THz}$
+        
+		\subsection{En.Stromdichte/Intensität I / S}
+			oder Energiestromdichte
+			\begin{align*}
+				I &= c \omega	& I &= \frac12 c \varrho y^2 \omega^2 
+			\end{align*} 
+
+			\begin{table}[h]
+			\begin{tabular}{ll}
+			$\omega \dots$ Energiedichte & $c \dots$ Wellenbewegung\\
+			\end{tabular}
+			\end{table}
+
+		\subsection{Grund- und Oberschwingungen}
+			\[
+				f_n=(n+1)\cdot\frac{c}{2l}
+			\]
+			\begin{table}[h]
+			\begin{tabular}{lll}
+				$f_n\dots$ Schwingungsfrequenz & $c\dots$ Phasengeschwindigkeit & $l\dots$ Saitenlänge\\
+			\end{tabular}
+			\end{table}
+		
+		\subsection{Wellenlänge im Medium}
+			\[
+				\lambda_{\mathrm{m}}=\frac{c_0}{\sqrt{\varepsilon_{\mathrm{r}}f}}
+			\]
+			
+			\begin{table}[h]
+			\begin{tabular}{lll}
+				$\lambda_{\mathrm{m}}\dots$ Wellenlänge im Medium 
+				& $c_0\dots$ Ausbreitungsgeschwindigkeit 
+				& $\varepsilon_{\mathrm{r}}\dots$ Permittivitätszahl\\
+			\end{tabular}
+			\end{table}
+
+		\subsection{Antennen}
+			\begin{table}[h]
+			\begin{tabular}{ll}
+				Antennenart & Formel\\
+				Dipol & $l=\frac{\lambda}{2}=\frac{c}{2f}$\\
+				Stab & $l=\frac{\lambda}{4}=\frac{c}{4f}$\\
+			\end{tabular}
+			\end{table}
+			\begin{table}[h]
+			\begin{tabular}{lll}
+				$c\dots$ Lichtgeschwindigkeit & $l\dots$ Antennenlänge\\
+			\end{tabular}
+			\end{table}
+	\section{Wellenüberlagerung}
+		\subsection{Grundlagen}
+			\begin{align*}
+				y_1&=\hat{y}\cos(\omega_1t-k_1x) & \omega_1\approx\omega_2\Rightarrow\omega&=\frac{\omega_1+\omega_2}{2}\\
+				y_2&=\hat{y}\cos(\omega_2t-k_2x) & k_1\approx k_2\Rightarrow k&=\frac{k_1+k_2}{2}\\
+				y=y_1+y_2&=2\hat{y}\cos(\omega t-kx)\cos\left(\frac{\Delta\omega}{2}t-\frac{\Delta k}{2}x\right)
+			\end{align*}
+
+		\subsubsection{Phasen-/Gruppengeschwindigkeit}
+			\begin{align*}
+				c&=\frac{\omega}{k} 
+				& c_{\mathrm{Gr}}&=\frac{\mathrm{d}x}{\mathrm{d}t}=\frac{\Delta\omega}{\Delta k}
+				=\frac{\mathrm{d}\omega}{\mathrm{d}t}=c-\lambda\cdot\frac{\mathrm{d}c}{\mathrm{d}\lambda}
+				=\frac{f_1-f_2}{\frac{1}{\lambda_1}-\frac{1}{\lambda_2}}
+			\end{align*}
+
+		\subsection{Dispersion}
+			\subsubsection{Fallunterscheidung}
+				\begin{table}[h]
+				\begin{tabular}{ll}
+					Kriterium & Dispersionsart\\
+					\toprule
+					$c_{\mathrm{Gr}} = c$ & Keine Dispersion\\
+					$c_{\mathrm{Gr}} < c$ & Normale Dispersion\\
+					$c_{\mathrm{Gr}} > c$ & Anomale Dispersion\\
+				\end{tabular}
+				\end{table}
+
+			\subsubsection{Biegeschwingung}
+				\begin{align*}
+					c&=\lambda_0\cdot f_0=\sqrt{\frac{\pi df_0}{2}}\cdot\sqrt[4]{\frac{E}{\varrho}}
+					& \lambda_0&=2l
+					& f_0=\frac{c}{2l}
+				\end{align*}
+
+				\begin{table}[h]
+				\begin{tabular}{lll}
+					$\lambda_0\dots$ Wellenlänge Grundschwingung & $f_0\dots$ Frequenz Grundschwingung & $d\dots$ Durchmesser Stab\\
+					$E\dots$ Elastizitätsmodul,$\left[\frac{\mathrm{N}}{\mathrm{m}^2}\right]$ & $\varrho\dots$ Werkstoffdichte\\
+				\end{tabular}
+				\end{table}
+
+			\subsubsection{Interferometer (Michelson)}
+				\begin{align*}
+					\lambda&=2\Delta s 
+					& t_{\mathrm{Luft}}&=\frac{x}{c_0} 
+					& t_{\mathrm{Platte}}&=\frac{x-l-\Delta x}{c_0}+\frac{ln}{c_0}\\
+					x&=x-l-\Delta x+ln\Rightarrow & n&=1+\frac{\Delta x}{l} 
+					& c&=\frac{c_0}{n}
+				\end{align*}
+
+				\begin{table}[h]
+				\begin{tabular}{lll}
+				$t\dots$ Laufzeit im Medium & $x\dots$ Entfernung Teiler zu Spiegel & $\Delta x$ Spiegelverschiebung $\mathrm{S}_{\mathrm{rechts}}$\\
+				$l\dots$ Probendicke & $c_0\dots$ Lichtgeschwindigkeit in Luft & $n$ Brechungsindex\\
+				$c\dots$ Lichtgeschw. (Medium) & $\Delta s$ Spiegelverschiebung $\mathrm{S}_{\mathrm{oben}}$\\
+				\end{tabular}
+				\end{table}
+			
+			\subsubsection{Maxwell-Relation}
+				\begin{align*}
+					n&=\frac{c_0}{c} & n&=\sqrt{\varepsilon_{\mathrm{r}}}
+				\end{align*}
+
+				\begin{table}[h]
+				\begin{tabular}{lll}
+					$n\dots$ Brechnungsindex & $c\dots$ Ausbreitungsgeschw. (Medium) & $c_0\dots$ Lichtgeschw.\\
+				\end{tabular}
+				\end{table}
+
+		\subsection{Leiterarten}
+			\subsubsection{Hohlleiter}
+				\begin{align*}
+					\omega(k)&=c_0\sqrt{k^2+\left(\frac{\pi}{a}\right)^2}
+					& c&=\frac{c_0}{\sqrt{1-\left(\frac{c_0}{2af}\right)^2}}
+					& c_{\mathrm{Gr}}&=\frac{\mathrm{d}\omega}{\mathrm{d}t}=c_0\sqrt{1-\left(\frac{c_0}{2af}\right)^2}
+				\end{align*}
+
+			\subsubsection{Quarzglas}
+				\begin{align*}
+					n&=\frac{c_0}{c}
+					& c_{\mathrm{Gr}}&=c-\lambda\frac{\mathrm{d}c}{\mathrm{d}\lambda}=\frac{c_0}{n_{\mathrm{Gr}}}
+					& n_{\mathrm{Gr}}&=n-\lambda\frac{\mathrm{d}n}{\mathrm{d}\lambda}
+				\end{align*}
+
+	\section{Mechanische Wellen}
+		\subsection{Energiedichte mechanischer Wellen}
+			\[
+				w = \frac{\mathrm{d}E}{\mathrm{d}V} = \frac12 \varrho \omega^2 \hat{y}^2
+			\]
+		
+		\subsection{Massenbelag}
+			\[
+				m'=\frac{\Delta m}{\Delta l}
+			\]	
+
+		\subsection{Spannkraft}
+			\[
+				F=\frac{mc^2}{l}
+			\]
+
+			\begin{table}[h]
+			\begin{tabular}{lll}
+			$F\dots$ Spannkraft & $m\dots$ Saitenmasse & $l\dots$ Saitenlänge\\
+			\end{tabular}
+			\end{table}
+
+	\section{elektrische Stromdichte $J$}
+		\[ J = n e v_{\mathrm{Drift}} \]
+		
+		\begin{table}[h]
+		\begin{tabular}{lll}
+		$n\dots$Dichte der Ladungsträger & $e\dots$Elementarladung & $v_{\mathrm{Drift}}\dots$ Driftgeschwindigkeit\\
+		\end{tabular}
+		\end{table}
+	
+	\section{Schallwellen}
+		\subsection{Schallpegel}
+			\subsubsection{Pegeldifferenz}
+				\[
+					\Delta L=L_1-L_2=10\log\left(\frac{I_1}{I_2}\right)\mathrm{dB}
+				\]
+
+				\begin{table}[h]
+				\begin{tabular}{lll}
+				$L_{1,2}\dots$ Schallpegel & $I_{1,2}\dots$ Schallintensitäten & $L_1>L_2$\\
+				\end{tabular}
+				\end{table}
+
+\clearpage
+
+		\subsection{Dopplereffekt}
+
+			\begin{table}[here]
+			\begin{tabular}{ccl}
+				Quelle & Beobachter & beobachtete Frequenz\\
+				\toprule
+				$\bullet$ & $\leftarrow \bullet$ & $f_{\mathrm{B}}=f_{\mathrm{Q}}\left(1+\frac{v_{\mathrm{B}}}{c}\right)$\\
+				\midrule
+				$\bullet$ & $\bullet \rightarrow$ & $f_{\mathrm{B}}=f_{\mathrm{Q}}\left(1-\frac{v_{\mathrm{B}}}{c}\right)$\\
+				\midrule
+				$\bullet \rightarrow$ & $\bullet$ & $f_{\mathrm{B}}=\frac{f_{\mathrm{Q}}}{1-\frac{v_{\mathrm{Q}}}{c}}$\\
+				\midrule
+				$\leftarrow \bullet$ & $\bullet$ & $f_{\mathrm{B}}=\frac{f_{\mathrm{Q}}}{1+\frac{v_{\mathrm{Q}}}{c}}$\\
+				\midrule
+				$\bullet \rightarrow$ & $\leftarrow \bullet$ & $f_{\mathrm{B}}=f_{\mathrm{Q}}\frac{c+v_{\mathrm{B}}}{c-v_{\mathrm{Q}}}$\\
+				\midrule
+				$\leftarrow \bullet$ & $\bullet \rightarrow$ & $f_{\mathrm{B}}=f_{\mathrm{Q}}\frac{c-v_{\mathrm{B}}}{c+v_{\mathrm{Q}}}$\\
+				\midrule
+				$\leftarrow \bullet$ & $\leftarrow \bullet$ & $f_{\mathrm{B}}=f_{\mathrm{Q}}\frac{c+v_{\mathrm{B}}}{c+v_{\mathrm{Q}}}$\\
+				\midrule
+				$\bullet \rightarrow$ & $\bullet \rightarrow$ & $f_{\mathrm{B}}=f_{\mathrm{Q}}\frac{c-v_{\mathrm{B}}}{c-v_{\mathrm{Q}}}$\\
+				\bottomrule
+			\end{tabular}
+			\end{table}
+
+
+			\begin{table}[h]
+			\begin{tabular}{ll}
+			$f_{\mathrm{B}}\dots$ Frequenz beim Beobachter & $f_{\mathrm{Q}}\dots$ Frequenz der Quelle\\
+			$v_{\mathrm{B}}\dots$ Beobachtergeschwindigkeit relativ zur Luft & $v_{\mathrm{Q}}\dots$ Quellengeschwindigkeit relativ zur Luft\\
+			$c\dots$ Schallgeschwindigkeit\\
+			\end{tabular}
+			\end{table}
+
+		\subsection{Frequenzverschiebung elektromagnetischer Wellen}
+			\begin{align*}
+				f_{\mathrm{B}} &= f_{\mathrm{Q}}\sqrt{\frac{c+v}{c-v}}= f_{\mathrm{Q}}\sqrt{\frac{1+\beta}{1-\beta}} & \text{Bei Annäherung}\\
+				f_{\mathrm{B}} &= f_{\mathrm{Q}}\sqrt{\frac{c-v}{c+v}}= f_{\mathrm{Q}}\sqrt{\frac{1-\beta}{1+\beta}} & \text{Bei Entfernung}
+			\end{align*}
+
+		\subsection{Schallintensitätspegel $L$}
+			\begin{align*}
+				L &= 10 \log{\frac{S}{S_0}}\mathrm{dB}  & S_1 &= S_0 10^{\frac{L}{10\mathrm{dB}}} & \frac{S_2}{S1} &= \left(\frac{r_1}{r_2} \right)^2
+			\end{align*}
+			Hinweis: diese Gleichungen gelten nur für Wellen mit ebenen Wellenfronten\newline
+
+			\begin{table}[h]
+			\begin{tabular}{ll}
+			$S\dots$ Schallintensität & $S_0\dots$ Normschallintensität $=10^{-12}\frac{\mathrm{W}}{\mathrm{m}^2}$\\
+			Leistung bei Kugeloberfläche $ P = 4\pi r^2I$
+			\end{tabular}
+			\end{table}
+
+		\subsection{Machscher Kegel}
+			\[ \sin \alpha = \frac{c_{\mathrm{Schall}}}{v_{\mathrm{Quelle}}}\] 
+			
+		\subsection{Schallwellengeschwindigkeit}
+			\[ v = \frac{\hat{p}}{\varrho c}\cos(\omega t - kx) \]
+		
+		\subsection{Schallwellenwiderstand}
+			oder auch Schallkennimpedanz
+			\begin{align*}
+				Z = \varrho c = \frac{\hat{p}}{\hat{v}} = \frac{\hat{p}^2}{I}
+			\end{align*}
+			
+			\begin{table}[h]
+			\begin{tabular}{lll}
+			$Z\dots$ Schallkennimpedanz & $\hat{v}\dots$ Schnellenamplitude & $\hat{p}\dots$ Schallwechseldruck\\
+			$\varrho\dots$ Dichte & $I\dots$ Intensität der Quelle\\
+			\end{tabular}
+			\end{table}
+
+\clearpage
+
+		\subsection{Reflexion, Transmission, Absorption}
+			\begin{align*}
+				\varrho_{\mathrm{s}} &= \left(\frac{Z_2-Z_1}{Z_2+Z_1}\right)^2 
+				& \tau_{\mathrm{s}} &= \frac{I_{\mathrm{t}}}{I_{\mathrm{e}}}= \frac{4Z_1Z_2}{(Z_1+Z_2)^2} 
+				& \alpha_{\mathrm{s}} &= \frac{I_{\mathrm{a}}}{I_{\mathrm{e}}}
+			\end{align*}
+
+			\begin{table}[h]
+			\begin{tabular}{lll}
+			$\varrho_{\mathrm{s}}\dots$ Reflexionsgrad & $\tau_{\mathrm{s}}\dots$ Transmissionsgrad & $\alpha_{\mathrm{s}}\dots$ Absorptionsgrad\\
+			\end{tabular}
+			\end{table}
+		
+	\section{Schnellenamplitude}
+		\[ \hat{v} = \frac{\hat{p}}{\varrho c } = \frac{\hat{p}}{Z} \]
+
+	\section{Auslenkung}
+		\begin{align*}
+			y &= \hat{y} \sin(\omega t - kx) & \text{mit} && \hat{y} &= \frac{\hat{p}}{\omega \varrho c} = \frac{\hat{p}}{Z \omega}
+		\end{align*}	
+
+	\section{Energiedichte $\omega$ bei el. mag. Wellen}
+		\begin{align*}
+			\omega &= \frac12 ( \epsilon_r \epsilon_0 E^2 + \mu_r \mu_o H^2) &\Rightarrow && S &= \omega c = \frac12 \epsilon_r \epsilon_0 \hat{E}^2 c =  \frac12 \mu_r \mu_0 \hat{H}^2 c
+		\end{align*}
+		$c\dots$Lichtgeschwindigkeit
+
+	\section{Wellenwiderstand $Z$ (el/mag)}
+		\[Z = \frac{E}{H} \]
+
+		\begin{table}[h]
+		\begin{tabular}{ll}
+		$E\dots$ Elektrisches Feld & $H\dots$ Magnetfeld\\
+		\end{tabular}
+		\end{table}
+
+	\section{2 getrennte Leiter}
+		\begin{align*}
+			C' &= \frac{\epsilon_r \epsilon_0 \pi}{\ln(\frac{a}{r}}) & L' &= \frac{\mu_r \mu_0}{\pi} \cdot \ln(\frac{a}{r})
+		\end{align*}
+
+		\begin{table}[h]
+		\begin{tabular}{ll}
+		$a\dots$Abstand der Leiter & $r\dots$Durchmesser eines Leiters\\
+		\end{tabular}
+		\end{table}
+		
+	\section{2 Leiter ineinander}
+		\begin{align*}
+			C' &= \frac{2\epsilon_r \epsilon_0 \pi}{\ln(\frac{D}{d}}) & L' &= \frac{\mu_r \mu_0}{2\pi} \cdot \ln(\frac{D}{d})
+		\end{align*}
+
+		\begin{table}[h]
+		\begin{tabular}{ll}
+		$d\dots$Durchmesser des Innenleiters & $D\dots$Durchmesser des Außenleiters\\
+		\end{tabular}
+		\end{table}
+	\section{Ausbreitungsgeschwindigkeit bei Wellen}
+
+		\begin{table}[here]
+			\begin{tabular}{l l}
+				Longitudinalwellen in Gasen & $ c = \sqrt{\frac{\kappa p}{\varrho}} $\\\midrule
+				Longitudinalwellen in Flüssigkeiten & $ c = \sqrt{\frac{K}{\varrho}} $\\\midrule
+				Longitudinalwellen in Stäben & $ c = \sqrt{\frac{E}{\varrho}} $\\\midrule
+				Torionswellen in Rundstäben & $ c = \sqrt{\frac{G}{\varrho}} $ \\\midrule
+				El./Mag. Wellen im Vakuum & $c = \frac{1}{\sqrt{\epsilon_0 \mu_0}} $\\\midrule
+				El./Mag. Wellen in Materie	 	& $ c = \frac{1}{\sqrt{\epsilon_0 \epsilon_r \mu_0 \mu_r}} $\\\midrule
+				Auf Saiten					& $ c = \sqrt{\frac{F}{A \varrho}} $
+			\end{tabular}
+			\caption{Ausbreitungsgeschwindigkeit}
+		\end{table}
+		
+		\begin{table}[h]
+		\begin{tabular}{lll}
+		$\kappa\dots$ Isotropenexponent & $\varrho\dots$ Dichte & $p\dots$ Druck\\
+		$A\dots$ Querschnitt des Drahts & $F\dots$ Spannkraft & $K\dots$ Kompressionsmodul\\
+		$E\dots$ Elastizitätsmodul & $G\dots$ Schubmodul\\
+		\end{tabular}
+		\end{table}
+
+\clearpage
+
+	\section{Wellenwid. im Freiraum und Leitungen}
+
+		\begin{table}[here]
+			\begin{tabular}{l c c}
+				& Leitungen & Freiraum\\\toprule
+				Definition & $Z_L = \frac{\underline{U}}{\underline{I}}$ & $Z_F = \frac{\underline{E}}{\underline{H}} $\\\midrule
+				Verlustbehaftet & $Z_L = \sqrt{\frac{R' + j\omega L'}{G'+j\omega C'}}$ & $ Z_L  = \sqrt{\frac{\mu_r \mu_0}{\epsilon_r \epsilon_0 - j\frac{\kappa}{\omega}}} $ \\\midrule
+				Verlustlos & $Z_L = \sqrt{\frac{L'}{C'}}$ &$Z_L = \sqrt{\frac{\mu_0}{\epsilon_o}} = 376,6 \Omega$\\\bottomrule
+			\end{tabular}
+			\caption{Wellenwiderstand}
+		\end{table}
+	
+		\begin{table}[h]
+		\begin{tabular}{lll}	
+		$R' = \frac{R}{l} \dots$ längs & $C' = \frac{C}{l} \dots$ & $L' = \frac{L}{l} \dots$ \\
+		$G' = \frac{G}{l} \dots$ quer & $l \dots$ länge & $\kappa \dots$ Spezifische Leitfähigkeit\\
+		\end{tabular}
+		\end{table}
+
+

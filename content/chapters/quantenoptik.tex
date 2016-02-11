@@ -1,0 +1,262 @@
+\chapter{Quantenoptik}
+	\section{Photonenenergie}
+		Im Grenzfall gilt $W_{\mathrm{Austritt}} = E_{\mathrm{Grenz}}$
+		\[ E_{ph} = h f = \frac{hc}{\lambda} = \frac{h'}{\lambda} \]
+		\begin{table}[h]
+		\begin{tabular}{ll}
+		$h=6,626\cdot10^{-34}$Js & $h'\dots$ 1,24$\mu$meV\\
+		\end{tabular}
+		\end{table}
+		
+	\section{Impuls $p$ eines Photons}
+		\[p = \frac{hf}{c} = \frac{h}{\lambda} = m v\]
+		
+		Photonenmasse:
+		\begin{align*}
+			m &= \frac{E_{ph}}{c^2} = \frac{hf}{c^2} &&& E_{kin} &= E - E_0 = (m - m_0)c^2 \\
+			v &= c \sqrt{1-\frac{1}{1+(\frac{eU_A}{m_o c^2})^2}} &&&
+		\end{align*}
+		
+		$c\dots$ Lichtgeschwindigkeit, üblicherweise $3\cdot10^8\nicefrac{\mathrm{m}}{\mathrm{s}}$
+		
+	\section{Strahlungsleistung $\Phi$ eines Lichtstrahles}
+		\begin{align*}
+			\Phi &= E_{\mathrm{ph}} \dot{N}_{\mathrm{ph}} = IA 
+			& \dot{N} &= \frac{\lambda}{hc} \Phi = \frac{\lambda}{h'} \Phi 
+			& I_{\mathrm{ph}} &= e\dot{N} \\
+			\Phi & = \Phi_0 \mathrm{e}^{-\alpha d} 
+		\end{align*}
+		
+		\begin{table}[h]
+		\begin{tabular}{lll}
+		$I_{ph}\dots$ Strom & $\dot{N}\dots$ Photonenstrom & $I\dots$ Intensität $\left[\frac{W}{m^2}\right]$ \\
+		$A\dots$ Fläche & $\alpha\dots$ Absorbtionskoeffizient & $d\dots$ Dicke des Kristalls\\
+		$h'\dots$ 1,24$\mu$meV\\
+		\end{tabular}
+		\end{table}
+		
+	\section{Beugung von Lichtwellen}
+		oder Heisenbergsche Unschärferelation genannt
+		\begin{align*}
+			e U_A &= \frac12 m v^2 & v &= \sqrt{\frac{2eU_A}{m}}
+		\end{align*}
+		Beugung bei kleinen Winkeln $\tan \alpha = \frac{\Delta px}{py} = \frac{\Delta px}{\frac{h}{\lambda}} $\newline
+		Beugungsminimum: $\sin \alpha = \frac{\lambda}{b} = \frac{\lambda}{\Delta x}$ \newline
+		Bei kleinen Winkeln: $\tan x  = \sin x $ \newline
+		\begin{align*}
+			\frac{\Delta px}{\frac{h}{\lambda}} &= \frac{\lambda}{\Delta x} & \Delta px \Delta x &= h
+		\end{align*}
+
+		\subsection{Brechung, Reflexion}
+			\begin{align*}
+				\varrho_{\mathrm{s}}&=\left(\frac{n_2-n_1}{n_2+n_1}\right)^2 
+				& \tau_{\mathrm{s}}&=\frac{4n_1n_2}{(n_1+n_2)^2}=\frac{I_{\mathrm{t}}}{I_{\mathrm{e}}}
+				& \alpha_{\mathrm{s}}&=\frac{I_{\mathrm{a}}}{I_{\mathrm{e}}}
+			\end{align*}
+
+			\begin{table}[h]
+			\begin{tabular}{lll}
+			$\varrho_{\mathrm{s}}\dots$ Reflexionsgrad & $\tau_{\mathrm{s}}\dots$ Transmissionsgrad & $\alpha_{\mathrm{s}}\dots$ Absorptionsgrad\\
+			\end{tabular}
+			\end{table}
+			\begin{table}[h]
+			\begin{tabular}{ll}
+			Stoff & Brechzahl\\
+			\toprule
+			Wasser & $n_{\mathrm{H_2O}}=1,33$\\
+			Glas & $n_{\mathrm{Glas}}=1,5$\\
+			Luft & $n_{\mathrm{Luft}}=1$\\
+			\end{tabular}
+			\caption{Häufige Brechzahlen}
+			\end{table}
+
+	\section{Elektronen im elektrischen Feld}
+		\begin{align*}
+			F_{\text{el}}&= -eE & a=-\frac{e}{m}E
+		\end{align*}
+
+		Arbeit: $W_{12}=eU_{12}=\frac{1}{2}m(v_2^2-v_1^2)$
+		Wellenlänge des Elektrons:
+
+		\begin{align*}
+			E_{\text{kin}}&= eU_A & \frac{1}{2}mv^2&= eU_A & v=\sqrt{\frac{2eU_A}{m}}
+		\end{align*}
+
+		$h=6,626\cdot10{-34}$Js \\
+		mit p=mv=$\nicefrac{h}{\lambda}$ folgt die Wellenlänge $\lambda=f(U_A)$
+		\[
+			\lambda=\frac{h}{\sqrt{2eU_Am}}
+		\]
+		\begin{table}[h]
+		\begin{tabular}{ll}
+		$U_A\dots$ Beschleunigungsspannung & $m\dots$ Elektronenmasse\\
+		\end{tabular}
+		\end{table}
+
+	\section{Bahnkurve des Elektrons im E-Feld}
+		\[
+			a_x=0; a_y=\frac{e}{m}E; v_x=v_x;v_y=\frac{e}{m}Et
+		\]
+		\begin{align*}
+			V_x&= v_xt & v_y&= \frac{1}{2}\frac{l}{m}Et^2 & y&= \frac{1}{2}\frac{e}{m}E\frac{x^2}{v^2} & y&= \frac{1}{4}\frac{U_K}{U_A}\frac{x^2}{d}
+		\end{align*}
+		\begin{table}[h]
+		\begin{tabular}{ll}
+		$d\dots$ Plattenabstand & $e=1,602\cdot10^{-19}$As\\
+		\end{tabular}
+		\end{table}
+	
+	\section{Bewegung von Elektronen im Magnetfeld}
+		\[
+			F_{\text{L}}=qvB \Rightarrow e^-:F_{\text{L}}=-evB
+		\]
+		\[
+			F_{\mathrm{L}}=F_{\mathrm{Zp}} \Rightarrow qvB=\frac{mv^2}{r}
+		\]
+		\subsection{Linke-Hand-Regel}
+			\begin{tabularx}{\textwidth}{l l}
+				Daumen & Elektronenflussrichtung\\
+				Zeigefinger & Magnetfeldrichtung\\
+				Mittelfinger & Lorentzkraft\\
+			\end{tabularx}
+        
+		\subsection{Rechte-Hand-Regel}
+			\begin{tabularx}{\textwidth}{l l}
+				Daumen & technische Stromrichtung\\
+				Zeigefinger & Magnetfeldrichtung\\
+				Mittelfinger & Lorentzkraft\\
+			\end{tabularx}
+	
+	\section{Radius im Fadenstrahlrohr}
+		\begin{align*}
+			\frac{mv^2}{r}&= evB \Rightarrow r = \frac{mv}{eB} & T= \frac{2\pi r}{v} &= \frac{2\pi m}{eB}
+		\end{align*}
+
+		\begin{align*}
+			T &= \frac{2\pi}{B}\frac{m}{e} & \omega &= \frac{2\pi}{T}=\frac{eB}{m}
+		\end{align*}
+
+		\subsection{Zyklotron}
+			\begin{align*}
+				\tau &= \frac{\mu m^*}{e} 
+				& v_\text{{th}} &= \sqrt{\frac{3kT}{m^*}} 
+				& l &= v_{th}\tau 
+				& f_{\text{res}} &= \frac{1}{\tau} 
+				& B_{\text{res}} &= \frac{2\pi f_{\text{res}} m^*}{e}
+			\end{align*}
+
+			\begin{table}[h]
+			\begin{tabular}{ll}
+			$\tau\dots$ Mittlere Flugdauer(Streuzeit), Relaxationszeit & $m^*\dots$ Reduzierte Masse\\
+			$l\dots$ mittlere freie Weglänge & $v_{\text{th}}\dots$ thermische Geschwindigkeit \\
+			$f_{\text{res}}\dots$ Zyklotronenresonanzfrequenz & $B\dots$ Magnetfeld, [T]\\
+			\end{tabular}
+			\end{table}
+
+	\section{Leiterschleife im Magnetfeld}
+		\begin{align*}
+			M&=IBA\sin\alpha=IBab\sin\alpha & ab&=A
+		\end{align*}
+
+	\section{Relativistische Bewegung}
+		\begin{align*}
+			E &= mc^2\text{(ruhend)} & \text{bzw. } E_0 &= m_0c^2 & m &= \frac{m_0}{\sqrt{1-\frac{v^2}{c^2}}}
+		\end{align*}
+
+	\section{Elektronen im Atom}
+		Kreisfrequenz eines Elektrons $\Rightarrow F_{\text{Z}}=F_{\text{coulomb}}$ 
+		wobei $Q=q_1q_2=Ze^2$, allerdings nur bei Atomen, die nur ein Außenelektron haben.
+		\begin{align*}
+			\omega^2 &= \frac{Ze^2}{4\pi\varepsilon_0m_0r^3} 
+			& E_{\text{kin}}=\frac{1}{2}J\omega^2=\frac{1}{2}mr^2\omega^2=\frac{Ze^2}{8\pi\varepsilon_0}\frac{l}{r}
+		\end{align*}
+		\begin{align*}
+			E_{\text{pot}} &= -\frac{1}{4\pi\varepsilon_0}\frac{Ze^2}{r} 
+			& E_{\text{ges}} &= E_{\text{kin}}+E_{\text{pot}} = -\frac{Ze^2}{8\pi\varepsilon_0}\frac{l}{r}
+		\end{align*}
+	
+		\begin{table}[h]
+		\begin{tabular}{ll}
+		$Z\dots$ Ordnungszahl\\
+		\end{tabular}
+		\end{table}
+	\section{Bohrsches Postulat}
+		für stehende Wellen gilt:
+		\[
+			\text{Bahnumfang} = 2\pi r = n\lambda = n\lambda = n\frac{h}{p} \Rightarrow l = rp = n\frac{h}{2\pi}
+		\]
+		\[
+			l = n\frac{h}{2\pi} = n\bar{h} = m_0r\omega
+		\]
+
+		mit $\omega^2=\dots$ ergibt sich:
+		\[
+			r_n=\frac{4\pi\varepsilon_0\bar{h}^2}{e^2m_0}\frac{n^2}{Z}
+		\]
+		mit $e^2m_0=5,29\cdot10^{-11}$m.
+
+		Die Energie eines Elektrons auf einer Bahn
+		\[
+			E_n=-Z^2\frac{e^4m_0}{32\pi^2\varepsilon_0^2\bar{h}^2}\frac{1}{n^2}
+		\]
+		mit $32\pi^2\varepsilon_0^2\bar{h}^2=13,6$eV.
+
+		\subsection{Bindungs- oder Ionisierungsenergie}
+		$\frac{e^4m_0}{32\pi^2\varepsilon_0^2\bar{h}^2}$ ist ein konstanter Faktor = 13,6 eV, gegebenenfalls 
+		mit reduzierter Masse multiplizieren oder durch $\varepsilon^2$ dividieren.
+
+	\section{Fermi-Energie}
+		\[
+			E_{\text{F}}=\frac{\bar{h}^2}{2m}(3\pi^2)^{\frac{2}{3}}n^{\frac{2}{3}} \text{ mit } n=\frac{N}{V}
+		\]
+        
+		Übergang zur Fermi-Geschwindigkeit:
+		\[
+			E_{\text{F}}=\frac{\bar{h}k_f}{2m}=\frac{p_{\text{F}}^2}{2m}=\frac{1}{2}mv_{\text{F}}^2
+		\]
+
+		\begin{table}[h]
+		\begin{tabular}{lll}
+		$n\dots$ Ladungsträgerdichte & $N\dots$ Anzahl der Ladungsträger & $\bar{h}=1,055\cdot10^{-34}\mathrm{Js}=6,58\cdot10^{-16}\mathrm{eVs}$\\
+		\end{tabular}
+		\end{table}
+        
+		\[
+			v_{\text{F}}=\sqrt{\frac{2E_{\text{F}}}{m}}
+		\]
+       
+       		\begin{table}[h]
+		\begin{tabular}{ll} 
+		$v_{\text{F}}\dots$ Fermigeschwindigkeit & $k_{\text{F}}\dots$ Wellenzahl, $k=\frac{2\pi}{\lambda}$\\
+		\end{tabular}
+		\end{table}
+        
+		\[
+			v_{\text{F}}=\frac{\bar{h}}{m}(3\pi^2n)^{\frac{1}{3}}
+		\]
+
+	\section{Zustandsdichte bei $T=0$K}
+		\[
+			D(E)=\frac{1}{2\pi^2}\left(\frac{2m^{\frac{2}{3}}}{\bar{h}}\right)E^{\frac{1}{2}}
+		\]
+
+		Mit zunehmender Temperatur gilt die Besetzungswahrscheinlichkeit
+		\[
+			f(E)=\frac{1}{1+e^{\frac{E-E_{\text{F}}}{kT}}}
+		\]
+	
+	\section{Drehmoment im homogenen elektrischen Feld}
+		\begin{align*}
+			M &= Fr\sin\beta & \vec{M}&=\vec{p}\times\vec{E} & \vec{p}&= q\vec{r} \text{ el. Dipolmoment}
+		\end{align*}
+
+	\section{Drehmoment im magnetischen Feld}
+		\begin{align*}
+			\vec{m}&=I\vec{A} \text{ mag. Dipolmoment} & m&=N\mu_B \text{ mag. Dipolmoment}
+		\end{align*}
+
+		\begin{table}[h]
+		\begin{tabular}{ll}
+		$\mu_B=9,274\cdot10^{-24}\text{Am}^2\dots$ Bohrsches Magneton & $N\dots$ Ladungsträger\\
+		\end{tabular}
+		\end{table}

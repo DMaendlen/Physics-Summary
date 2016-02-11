@@ -1,0 +1,240 @@
+\chapter{Halbleiter}
+	\section{Eigenleitung}
+		\begin{align*}
+			n_i &= n_{i0}T^{\frac{3}{2}}e^{-\frac{E_\text{g}}{2kT}} & \kappa &=en_i(\mu_n+\mu_p) & n_i &= p=n
+		\end{align*}
+	
+	\section{Temperaturabhängigkeit der Beweglichkeit $\mu$}
+		\begin{align*}
+			\mu(T) &= \mu_0\left(\frac{T}{T_0}\right)^{\frac{3}{2}} & R(T) &= R_0e^{-\frac{E_{\text{g}}}{2kT}}
+		\end{align*}
+	
+	\section{Temperaturabhängigkeit des Widerstands}
+		\begin{align*}
+			\frac{R_1}{R_2}&=e^{\frac{E_{\mathrm{A}}}{2k}\left(\frac{1}{T_1}-\frac{1}{T_2}\right)} 
+			& E_{\mathrm{A}}&=\frac{2k}{\frac{1}{T_1}-\frac{1}{T_2}}\cdot\ln\frac{R_1}{R_2}
+		\end{align*}
+		\begin{table}[h]
+		\begin{tabular}{ll}
+		n-Typ & p-Typ\\
+		\toprule
+		$R\sim e^{\frac{E_{\mathrm{D}}}{2kT}}$ & $R\sim e^{\frac{E_{\mathrm{A}}}{2kT}}$\\
+		\end{tabular}
+		\end{table}
+
+	\section{Proportionalitäten}
+		\begin{align*}
+			n\sim e^{-\frac{E_{\mathrm{D}}}{2kT}} && p\sim e^{-\frac{E_{\mathrm{A}}}{2kT}} && R\sim e^{E_{\mathrm{D}}{2kT}}
+		\end{align*}
+
+	\section{Ladungsträgerdichte $n$, $p$}
+		\[
+			n=\frac{m}{V}\frac{N_\text{A}}{M}
+		\]
+
+		\begin{table}[h]
+		\begin{tabular}{lll}
+		$\nicefrac{m}{V}=\rho\dots$ Dichte & $\nicefrac{N_{\text{A}}}{M}=m_{\text{Atom}}\dots$ Atommasse & $m\dots$ Masse\\
+		$V\dots$ Volumen & $N_{\text{A}}\dots$ Avogadrokonstante, $6,022\cdot10^{23}\nicefrac{1}{\mathrm{mol}}$ & $M\dots$ Molare Masse in $\nicefrac{g}{\mathrm{mol}}$\\
+		\end{tabular}
+		\end{table}
+
+\clearpage
+
+	\section{Intrinsische Trägerdichte $n_i$}
+		\subsection{n-Typ}
+		aus der V. bis VII. Hauptgruppe
+			\begin{align*}
+				n &= \frac{n_{\text{D}}}{2}+
+				\sqrt{\left(\frac{n_{\text{D}}}{2}\right)^2+n_i^2} 
+				& np &=n_i^2 & p &=\frac{n_i^2}{n}
+			\end{align*}
+
+			\begin{table}[h]
+			\begin{tabular}{ll}
+			Für $n_{\text{D}}\gg n_i \rightarrow n=n_{\text{D}}$ & Für $n_{\text{D}}\ll n_i \rightarrow n=n_i$\\
+			\end{tabular}
+			\end{table}
+
+		\subsection{p-Typ}
+		aus der I. bis III. Hauptgruppe
+			\begin{align*}
+				p &= \frac{n_{\text{A}}}{2}+
+				\sqrt{\left(\frac{n_{\text{A}}}{2}\right)^2+n_i^2} 
+				& np &= n_i^2 & n &= \frac{n_i^2}{p}
+			\end{align*}
+
+			\begin{table}[h]
+			\begin{tabular}{ll}
+			Für $n_{\text{A}}\gg n_i \rightarrow n=n_{\text{A}}$ & Für $n_{\text{A}}\ll n_i \rightarrow n=n_i$\\
+			\end{tabular}
+			\end{table}
+
+	\section{Spezifische Leitfähigkeit $\kappa$}
+		\[
+			\kappa=e(n\mu_{\text{n}}+p\mu_{\text{p}}), [\kappa]=\nicefrac{1}{\Omega\text{cm}}
+		\]
+
+		\begin{table}[h]
+		\begin{tabular}{ll}
+		Für starke n-Dotierung $\kappa_{\text{n}}=en_{\text{D}}\mu_{\text{n}}$ & Für starke p-Dotierung $\kappa_{\text{p}}=en_{\text{A}}\mu_{\text{p}}$\\
+		\end{tabular}
+		\end{table}
+	
+	\section{Störstellenreserve}
+		\begin{tabularx}{\textwidth}{c c}
+		für n-Leiter & für p-Leiter\\
+		$n=\sqrt{\frac{n_{\text{D}}N_{\text{L}}}{2}e^{\frac{E_{\text{D}}}{2kT}}}$
+		& $n=\sqrt{\frac{n_{\text{A}}N_{\text{L}}}{2}e^{\frac{E_{\text{A}}}{2kT}}}$ \\
+		\end{tabularx}
+
+		\begin{table}[h]
+		\begin{tabular}{ll}
+		$N_{\text{L}}\dots$ Zustandsdichte Leitungsband & $E_{\text{D}}\dots$ Donatoren-Energielücke\\
+		$E_{\text{A}}\dots$ Akzeptoren-Energielücke\\
+		\end{tabular}
+		\end{table}
+	
+	\section{Räumliche Ausbreitung einer Störung}
+		\begin{align*}
+			\frac{\mathrm{d}N}{\mathrm{d}t}=\dot{N}=-\left(\frac{\mathrm{d}\Delta n}{\mathrm{d}t}\right)\cdot A\cdot D
+		\end{align*}
+
+		\begin{table}[h]
+		\begin{tabular}{lll}
+		$\dot{N}\dots$ Ladungsträgerstrom & $A\dots$ Fläche & $D\dots$ Diffusionskoeffizient\\
+		\end{tabular}
+		\end{table}
+	
+	\section{Diffusionsspannung}
+		\begin{align*}
+			U_{\mathrm{d}}&=\frac{kT}{e}\cdot\ln\left(\frac{n_{\mathrm{D}}\cdot n_{\mathrm{A}}}{n_{\mathrm{i}}^2}\right)
+			& U_{\mathrm{dR}}&=25,9\mathrm{mV}\cdot\ln\left(\frac{n_{\mathrm{D}}\cdot n_{\mathrm{A}}}{n_{\mathrm{i}}^2}\right)
+		\end{align*}
+		
+		\begin{table}[h]
+		\begin{tabular}{ll}
+		$kT\dots$ 25,9meV bei Raumtemperatur (300K) & $U_{\mathrm{dR}}\dots$ Diffusionsspannung bei Raumtemperatur\\
+		\end{tabular}
+		\end{table}
+
+		\subsection{Entfernung vom pn-Übergang}
+			\subsubsection{Allgemein}
+				\[
+					\frac{\partial\Delta n}{\partial t}=\frac{D_{\mathrm{n}}\cdot\partial^2\Delta n}{\partial x^2}-\frac{\Delta n}{\tau_{\mathrm{n}}}
+				\]
+
+			\subsubsection{Stationärer Zustand}
+				\begin{align*}
+					L_{\mathrm{n}}&=\sqrt{D_{\mathrm{n}}\tau}\cdot5\approx x_{\mathrm{n}}
+					& L_{\mathrm{p}}&=\sqrt{D_{\mathrm{p}}\tau}\cdot5\approx x_{\mathrm{p}}
+				\end{align*}
+
+				$x_{\mathrm{{n,p}}}\dots$ ungefähre Entfernung vom pn-Übergang\\
+
+	\section{Driftgeschwindigkeit}
+		\begin{align*}
+			v_{\text{d}0} &= -\frac{e}{m}\tau E_0 & v_{\text{d}0} &=-\mu E_0 & \tau &= \frac{\kappa m_0}{e^2n} 
+			& j &= -env_{\text{d}0}=\kappa E_0
+		\end{align*}
+
+		\begin{table}[h]
+		\begin{tabular}{ll}
+		$E_0\dots$ Elektrische Feldstärke & $e=1,602\cdot10^{-19}$As\\
+		\end{tabular}
+		\end{table}
+
+	\section{Ionisierungswahrscheinlichkeit}
+		\[
+			f_{\text{I}}=1-f(E_{\text{D}})
+		\]
+
+		$E_0\dots$ Besetzungswahrscheinlichkeit des Donatoratoms
+
+	\section{Effektive Zustandsdichte der Energiebänder}
+		\begin{align*}
+			n &= N_{\text{L}}e^{-\frac{E_{\text{L}}-E_{\text{F}}}{kT}} 
+			& p &= N_{\text{v}}e^{-\frac{E_{\text{F}}-E_{\text{V}}}{kt}} 
+			& n_{\text{i}}^2 = np = N_{\text{L}}N_{\text{V}}e^{-\frac{E_{\text{g}}}{kT}}
+		\end{align*}
+
+\clearpage
+
+	\section{Austrittsarbeit}
+		\begin{align*}
+			W_{\mathrm{A}}&=E_{\mathrm{ph}}=\frac{hc}{\lambda}=\frac{h'}{\lambda} & E_{\mathrm{kin}}&=\frac{1}{2}mv^2=E_{\mathrm{ph}}-W_{\mathrm{A}}
+		\end{align*}
+		
+		\begin{table}[h]
+		\begin{tabular}{lll}
+		$E_{\mathrm{ph}}\dots$ Photonenenergie & $W_{\mathrm{A}}\dots$ Austrittsarbeit & $h'\dots$ 1,24$\mu$meV \\
+		\end{tabular}
+		\end{table}
+	
+	\section{Shockley-Gleichung}
+		\begin{align*}
+			I&=I_{\mathrm{s}}\left(e^{\frac{eU}{kT}}-1\right) 
+			& I_{\mathrm{R}}&=I_{\mathrm{s}}\left(e^{\frac{U}{25,9\mathrm{mV}}}-1\right) 
+			& I_{\mathrm{s}}&=Ae\left(n_{\mathrm{p}}\frac{D_{\mathrm{n}}}{L_{\mathrm{n}}}+p_{\mathrm{n}}\frac{D_{\mathrm{p}}}{L_{\mathrm{p}}}\right)
+		\end{align*}
+	
+		\begin{table}[h]
+		\begin{tabular}{ll}
+		$I_{\mathrm{s}}\dots$ Sperrsättigungsstrom & $L_{\mathrm{n,p}}\dots$ Diffusionslänge der Ladungsträger\\
+		$A\dots$ Diodenfläche & $e=1,602\cdot10^{-19}$As\\
+		$I_{\mathrm{R}}\dots$ Strom bei Raumtemperatur & \\
+		\end{tabular}
+		\end{table}
+	
+	\section{Differenzieller Widerstand $r$}
+		\begin{align*}
+			r&=\frac{\mathrm{d}U}{\mathrm{d}I} 
+			& \frac{1}{r}&=\frac{\mathrm{d}I}{\mathrm{d}U}=I_{\mathrm{s}}\cdot\frac{e}{kT}\cdot e^{\frac{eU}{kT}}
+			& \frac{1}{r_{\mathrm{R}}}&=\frac{\mathrm{d}I}{\mathrm{d}U}=I_{\mathrm{s}}\cdot\frac{1}{25,9{\mathrm{mV}}}\cdot e^{\frac{U}{25,9\mathrm{mV}}}
+		\end{align*}
+
+\clearpage
+
+	\section{Eigenschaften wichtiger Halbleiter}
+		\begin{table}[here]
+		\begin{tabularx}{\textwidth}{llll}
+		& Ge & Si & GaAs\\
+		\toprule
+		Kristallstruktur & Diamant & Diamant & Zinkblende\\
+		\midrule
+		Gitterkonstante $a$ in $10^{-10}$m & 5,65771 & 5,43043 & 5,65325\\
+		\midrule
+		lin. Ausdehnungskoeff. $\alpha$ in $10^{-6}\mathrm{K}^{-1}$ & 5,90 & 2,56 & 6,86\\
+		\midrule
+		spez. Wärmekapazität $c$ in $\nicefrac{\mathrm{kJ}}{\mathrm{kgK}}$ & 0,31 & 0,70 & 0,35\\
+		\midrule
+		Wärmeleitfähigkeit $\lambda$ in $\nicefrac{\mathrm{W}}{\mathrm{mK}}$ & 64 & 145 & 46\\
+		\midrule
+		Schmelzpunkt $\vartheta_{\mathrm{S}}$ in °C (K) & 937 (1210,15) & 1415 (1688,15) & 1238 (1511,15)\\
+		\midrule
+		Atomdichte $\nicefrac{\mathrm{N}}{\mathrm{V}}$ in $10^{22}\mathrm{cm}^{-3}$ & 4,42 & 5,0 & 4,42\\
+		\midrule
+		Dichte $\varrho$ in $\nicefrac{\mathrm{kg}}{\mathrm{m}^3}$ & 5326,7 & 2328 & 5320\\
+		\midrule
+		Molmasse $M$ in $\nicefrac{\mathrm{g}}{\mathrm{mol}}$ & 72,60 & 28,09 & 144,63\\
+		\midrule
+		Bandgap $E_{\mathrm{g}}$ in eV & 0,660 & 1,11 & 1,43\\
+		\midrule
+		intrinsische Trägerdichte $n_{\mathrm{i}}$ in $\mathrm{cm}^{-3}$ & $2,33\cdot10^{13}$ & $1,02\cdot10^{10}$ & $2,00\cdot10^6$\\
+		\midrule
+		Effektive Zustandsdichte & &\\
+		im Leitungsband $N_{\mathrm{L}}$ in $\mathrm{cm}^{-3}$ & $1,24\cdot10^{19}$ & $2,85\cdot10^{19}$ & $4,55\cdot10^{17}$\\
+		im Valenzband $N_{\mathrm{V}}$ in $\mathrm{cm}^{-3}$ & $5,35\cdot10^{18}$ & $1,62\cdot10^{19}$ & $9,32\cdot10^{18}$\\
+		\midrule
+		Beweglichkeit & &\\
+		$\mu_{\mathrm{n}}$ in $\nicefrac{\mathrm{cm}^2}{\mathrm{Vs}}$ & 3900 & 1350 & 8500\\
+		$\mu_{\mathrm{p}}$ in $\nicefrac{\mathrm{cm}^2}{\mathrm{Vs}}$ & 1900 & 480 & 435\\
+		\midrule
+		relative Dielektrizitäts-/Permittivitätszahl & 16 & 11,8 & 12,9\\
+		\midrule
+		Lebendsdauer d. $e^-$ $\tau$ (Größenordnung) & ms & $\mu$s & ns\\
+		\bottomrule
+		\end{tabularx}
+		\label{wichtige Halbleiter}
+		\caption{Eigenschaften wichtiger Halbleiter, Quelle: HMS, 12. Auflage}
+		\end{table}
